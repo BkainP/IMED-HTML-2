@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>IMED-HTML-2</title>
+	<style> .leftCol{background-color: red;}.lefttCol{background-color: blue;}.leftttCol{background-color: green;}.lefttttCol{background-color: purple;}.leftttttCol{background-color: gold;}.lefttttttCol{background-color: cyan;}
+	
+		#chartname{color: white}</style>
 </head>
 <body style="text-align:center;background-color: black; font-family: Comic Sans MS">
 	
@@ -16,7 +19,7 @@
 <img src="images/purple.jpg" alt="purple flowers"><h1 style="color: Purple; background-color: mediumpurple; border:5px solid blueviolet; font-family: Comic Sans MS">Purple</h1>  <br>
 <img src="images/pink.jpg" alt="pink umbrellas"><h1 style="color: pink; background-color: deeppink; border:5px solid hotpink; font-family: Comic Sans MS">Pink</h1>  <br><br><br>
 
-<h2 style="color: white">Sample Color Mixing Table</h2>
+<h2 id="chartname">Sample Color Mixing Table</h2>
 <table align="center" width="50%" height="248" style="width:50%; border: thin solid; color: white">
 	<tr align="center">
 		<th><b>Color 1</b></th>
@@ -25,35 +28,37 @@
 	</tr>
 	
 	<tr align="center">
-	  <td>Red </td>
-		<td>Blue </td>
-		<td>Purple </td>
+	  <td class="leftCol">Red </td>
+		<td class="lefttCol">Blue </td>
+		<td class="lefttttCol">Purple </td>
   </tr>
 	
 	<tr align="center">
-	  <td>Red </td>
-		<td>Green </td>
-		<td>Yellow </td>
+	  <td class="leftCol">Red </td>
+		<td class="leftttCol">Green </td>
+		<td class="leftttttCol">Yellow </td>
 	</tr>
 	
 	<tr align="center">
-		<td>Blue </td>
-		<td>Green </td>
-		<td>Cyan </td>
+		<td class="lefttCol">Blue </td>
+		<td class="leftttCol">Green </td>
+		<td class="lefttttttCol">Cyan </td>
   </tr>
 </table>
 <br><br>	
 <h2 style="color: white">Complementary Colors</h2>
 	<ul>
-		<li style="color: white; font-size: 20px; align=center">Red and Cyan</li>
-		<li style="color: white; font-size: 20px">Green & Magenta</li>
-		<li style="color: white; font-size: 20px">Blue & Yellow</li>
+		<li id="color" style="color: white; font-size: 20px; align=center"></li>
+		<li style="color: white; font-size: 20px">Green + Magenta</li>
+		<li style="color: white; font-size: 20px">Blue + Yellow</li>
 	</ul>
 	
 	
 <br><br><br><br>	
-<h1 title="Prepare to smile" style="background-color: white; border:5px solid whitesmoke; font-family: Comic Sans MS">
+<h1 title="Hope it helps!" style="background-color: white; border:5px solid whitesmoke; font-family: Comic Sans MS">
 	<a href="https://www.thegoodtrade.com/features/positive-affirmations-morning-routine/">Feeling Down? Click Here!</a></h1> 	
 <h1 title="Leaving already?" style="background-color: white; border:5px solid whitesmoke; font-family: Comic Sans MS"><a href="../IMED-HTML-1/index.html">Before and After - TV Channel Logos!</a></h1>
 </body>
+	<script>
+document.getElementById("color").innerHTML = "Red + Cyan"</script>
 </html>
